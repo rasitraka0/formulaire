@@ -94,7 +94,7 @@ function validationZip() {
     inputZip.style.border = '2px solid red';
   }
 }
-function ValidationCheckBox() {
+function validationCheckBox() {
   let messageCheckBox = document.getElementById('messageCheckBox');
   let inputCheckbox = document.getElementById('checkBox');
   let checkBoxCouleur = document.getElementById('labelCheckBox');
@@ -116,7 +116,7 @@ submitButton.addEventListener('click', function (event) {
   validationCity();
   validationState();
   validationZip();
-  ValidationCheckBox();
+  validationCheckBox();
   let myForm = {
     firstName: document.getElementById('firstName').value.trim(),
     lastName: document.getElementById('lastName').value.trim(),
