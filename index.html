@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <h1 class="titre-de-formulaire">Formulaire</h1>
+    <form action="" id="formulaire">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" />
+        <small class="message" id="messageFirstName"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" />
+        <small class="message" id="messageLastName"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="userName">Username</label>
+        <div class="input-group">
+          <span class="input-addon">@</span>
+          <input type="text" id="userName" name="userName" />
+        </div>
+        <small class="message" id="messageUserName"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" />
+        <small class="message" id="messageCity"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">choose</option>
+          <option value="Ambodistiry">Ambodistiry</option>
+          <option value="Andravoangy">Andravoangy</option>
+          <option value="Analakely">Analakely</option>
+          <option value="Masay">Masay</option>
+          <option value="Sabotsy">Sabotsy</option>
+        </select>
+        <small class="message" id="messageState"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" name="zip" />
+        <small class="message" id="messageZip"></small>
+      </div>
+
+      <div class="form-group checkbox">
+        <input type="checkbox" id="checkBox" />
+        <label for="checkbox" id="labelCheckBox"
+          >Agree to terms and conditions</label
+        >
+        <small class="message" id="messageCheckBox"></small>
+      </div>
+
+      <div class="button">
+        <button id="buttonSubmit" type="submit">Submit form</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
